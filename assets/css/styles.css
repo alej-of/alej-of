@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.resume-header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #343a40;
+}
+
+.print-btn {
+    margin: 20px;
+}
+
+@media print {
+
+    header {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        padding: 1px;
+    }
+
+    .contact-info {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .skills-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        gap: 1px;
+    }
+
+    .skills-section ul {
+        list-style: none;
+        line-height: 1em;
+    }
+
+    .skills-section .resume-section {
+        margin-top: 30px;
+        page-break-inside: avoid; 
+    }
+
+    .card {
+        padding: 0;
+        margin: 0;
+    }
+
+    div + div {
+        border-top: 2px solid #000;
+        padding-top: 5px;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+    }
+
+    body {
+        font-size: 12px;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .no-print, .print-btn {
+        display: none;
+    }
+    
+    @page {
+        margin: 5mm;
+    }
+
+    .resume-section {
+        page-break-inside: avoid;
+    }
+
+    h2::before {
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}

@@ -7,82 +7,10 @@
     <title>Alejandro Olmedo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-        }
 
-        .resume-header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .resume-section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #343a40;
-        }
-
-        .print-btn {
-            margin: 20px;
-        }
-
-        @media print {
-            body {
-                font-size: 10px;
-                line-height: 1.2;
-            }
-
-            h1 {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-
-            h2 {
-                font-size: 12px;
-                margin-bottom: 8px;
-            }
-
-            p, li {
-                font-size: 10px;
-            }
-
-            .resume-section {
-                margin-bottom: 10px;
-            }
-
-
-            .container {
-                padding: 5px;
-                margin: 0;
-            }
-
-            .no-print, .print-btn {
-                display: none;
-            }
-
-            @page {
-                margin: 10mm;
-            }
-
-            .resume-section {
-                page-break-inside: avoid;
-            }
-
-            h2::before {
-                display: block;
-                font-weight: bold;
-                text-align: left;
-                font-size: 12px;
-                margin-top: 10px;
-            }
-        }
     </style>
 </head>
 
@@ -90,17 +18,17 @@
 
     <header class="resume-header">
         <h1>Alejandro Olmedo F.</h1>
-        <p id="role-text">Desarrollador Web | Django</p>
+        <p id="role-text">Desarrollador Full Stack | Django</p>
         <p>
             <i class="fas fa-envelope"></i><a href="mailto:alej.of.19@gmail.com" class="text-white" target="_blank"> alej.of.19@gmail.com</a> |
-            <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/alej-of" class="text-white" target="_blank"> LinkedIn</a> |
-            <i class="fab fa-github"></i><a href="https://github.com/alej-of" class="text-white" target="_blank"> GitHub</a> |
+            <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/alej-of" class="text-white" target="_blank"> in/alej-of</a> |
+            <i class="fab fa-github"></i><a href="https://github.com/alej-of" class="text-white" target="_blank"> /alej-of</a> |
             <i class="fas fa-mobile"></i> (+569) 5830 4748
         </p>
     </header>
 
     <div class="text-center no-print">
-        <button id="lang-btn" class="btn btn-primary lang-btn" onclick="toggleLanguage()">Cambiar Idioma (Inglés)</button>
+        <button id="lang-btn" class="btn btn-primary lang-btn" onclick="toggleLanguage()">English</button>
         <button id="print-btn" class="btn btn-secondary print-btn" onclick="window.print()">Imprimir/Exportar</button>
     </div>
 
@@ -109,38 +37,39 @@
             <h2 id="summary-title">Sobre mí</h2>
             <p id="summary-text">
                 Estoy empezando como desarrollador web especializado en Python. Tengo formación en Django, PostgreSQL y Bootstrap, 
-                pero también soy flexible y ávido aprendiendo, y me adapto rápidamente a otras tecnologías. Tengo más de cinco años de 
-                experiencia previa en administración de empresas, que se traducen en capacidad de liderazgo y trabajo en equipo.
+                pero soy flexible y ávido aprendiendo, y me adapto rápidamente a otras tecnologías. Tengo más de cinco años de 
+                experiencia previa en administración de empresas, que se traducen en capacidad de liderazgo y trabajo en equipo. 
+                Estoy muy motivado en este proceso de reconversión laboral y tengo las herramientas para cumplir en el rol.
             </p>
         </div>
 
-        <div class="resume-section">
-            <h2 id="skills-title">Habilidades</h2>
+        <div class="skills-section">
+            <h2 id="skills-title" class="my-4">Habilidades</h2>
             <ul class="list-group">
-                <li class="list-group-item">Django, Python, C</li>
-                <li class="list-group-item">PostgreSQL, MySQL</li>
-                <li class="list-group-item">HTML5, CSS3, JavaScript, Bootstrap</li>
-                <li class="list-group-item">Git, Docker</li>
-                <li class="list-group-item" id="skills-agile">Metodologías Agile (Scrum)</li>
-                <li class="list-group-item" id="skills-langs">Nivel avanzado en Inglés (C1~C2). Nivel intermedio en Francés (B1).</li>
-                <li class="list-group-item" id="skills-softs">Proactivo, disciplinado, buen autoaprendizaje, colaborativo, flexible, resolución de problemas.</li>
+                <li class="list-group-item list-group-item-action">Django, Python, C</li>
+                <li class="list-group-item list-group-item-action">PostgreSQL, MySQL</li>
+                <li class="list-group-item list-group-item-action">HTML5, CSS3, JavaScript, Bootstrap</li>
+                <li class="list-group-item list-group-item-action">Git, Docker</li>
+                <li class="list-group-item list-group-item-action" id="skills-agile">Metodologías Agile (Scrum)</li>
+                <li class="list-group-item list-group-item-action" id="skills-langs">Nivel avanzado en Inglés (C1). Nivel intermedio en Francés (B1).</li>
+                <li class="list-group-item list-group-item-action" id="skills-softs">Proactivo, disciplinado, buen autoaprendizaje, colaborativo, flexible, resolución de problemas.</li>
             </ul>
         </div>
 
         <div class="resume-section">
-            <h2 id="experience-title">Experiencia</h2>
-            <div class="card mb-3">
+            <h2 id="experience-title" class="my-4">Experiencia</h2>
+            <div class="card my-2">
                 <div class="card-body">
                     <h5 class="card-title" id="exp1-title">Empleo Independiente</h5>
                     <p class="card-text" id="exp1-date">2021 - Presente</p>
                     <ul>
                         <li id="exp1-desc1">He hecho todo tipo de trabajos, desde asesorías, instalación de sistemas hasta repartos en este periodo.</li>
-                        <li id="exp1-desc2">Durante esta transición decidí retomar estudios para volver a trabajar en áreas más ad-hoc con mi formación profesional.</li>
+                        <li id="exp1-desc2">Durante esta transición decidí retomar estudios para volver a trabajar en áreas más relacionadas con mi formación profesional.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card my-2">
                 <div class="card-body">
                     <h5 class="card-title" id="exp2-title">Administrador - Comercial Causa Nostra ltda.</h5>
                     <p class="card-text" id="exp2-date">2017 - 2021</p>
@@ -152,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card my-2">
                 <div class="card-body">
                     <h5 class="card-title" id="exp3-title">Práctica Profesional - Anglo American SA, División Los Bronces</h5>
                     <p class="card-text" id="exp3-date">2012</p>
@@ -165,13 +94,13 @@
         </div>
 
         <div class="resume-section">
-            <h2 id="education-title">Educación</h2>
-            <div class="card mb-3">
+            <h2 id="education-title" class="my-4">Educación</h2>
+            <div class="card my-1">
                 <div class="card-body">
                     <h5 class="card-title" id="edu1-title">Ingeniería Civil Electrónica - Universidad Técnica Federico Santa María</h5>
                     <p class="card-text" id="edu1-date">2008 - 2014 (Incompleta)</p>
                 </div>
-            <div class="card mb-3">
+            <div class="card my-1">
                 <div class="card-body">
                     <h5 class="card-title" id="edu2-title">Certificación Desarrollo FullStack en Python - Desafio Latam</h5>
                     <p class="card-text" id="edu2-date">Marzo - Septiembre 2024</p>
@@ -185,31 +114,47 @@
     <script>
         const translations = {
             en: {
-                "role-text": "Web Developer | Django",
+                "role-text": "Full Stack Developer | Django",
                 "summary-title": "Professional Summary",
-                "summary-text": "I'm starting as a web developer specializing in Python. I have a strong background in Django, PostgreSQL, and Bootstrap, and I am highly adaptable to new technologies and workflows. With 5+ years of prior experience in business administration, I bring strong leadership and team collaboration skills.",
+                "summary-text": "I'm starting as a web developer specialized in Python. I have a foundation on Django, PostgreSQL and Bootstrap, but I'm flexible and an avid learner, and I can adapt quickly to other technlogies. I have more than five years of experience in business administration, which translates into leadership and teamwork skills. I'm very motivated to start this new career path and I believe I have the tools to fulfill this role.",
                 "skills-title": "Skills",
                 "experience-title": "Experience",
                 "exp1-title": "Self-Employed",
                 "exp1-date": "2021 - Present",
-                "edu1-title": "Civil Electronic Engineering - UTFSM",
-                "edu2-title": "FullStack Python Developer Certification",
+                "exp1-desc1": "I've being doing all kinds of odd jobs, from installing networks to admistration consulting to delivery gigs.",
+                "exp1-desc2": "During this period I decided to study again in order to go back to areas more related to my college studies.",
+                "exp2-desc1": "I lead a team that designed the brand, planned the organization and finally inaugurated a restaurant in the city of Valparaíso.",
+                "exp2-desc2": "I continued to conduct the day to day operations, in addition to the administrative work of the business.",
+                "exp2-desc3": "I ended up leaving the job after a forced downsize of the business because of the pandemic .",
+                "exp3-title": "Práctica Profesional - Anglo American S.A., División Los Bronces",
+                "exp3-desc1": "I joined the team of electrical maintenance, where I focused on the instrumentation.",
+                "exp3-desc2": "I seized the initiative to lead a project of designing the HMI and the control loop of the system of a cathode separating machine in one of the indsutrial plants.",
+                "edu1-title": "Electronics Engineering - Universidad Técnica Federico Santa María",
+                "edu2-title": "Full Stack Python Developer Certification - Desafío Latam",
                 "lang-btn": "Español",
                 "print-btn": "Print/Export",
                 "skills-agile": "Agile Methodologies (Scrum)",
                 "skills-langs": "Fluent in Spanish (Native) and English (C1). Proficient in French (B1)",
-                "skills-softs": "Proactive, disciplined, self-learner, collaborative, flexible thinking, good problem solving."
+                "skills-softs": "Proactive, disciplined, self-learner, collaborative, flexible thinking, good problem solving.",
             },
             es: {
-                "role-text": "Desarrollador Web | Django",
+                "role-text": "Desarrollador Full Stack | Django",
                 "summary-title": "Sobre mí",
-                "summary-text": "Estoy empezando como desarrollador web especializado en Python. Tengo formación en Django, PostgreSQL y Bootstrap, pero también soy flexible y ávido aprendiendo, y me adapto rápidamente a otras tecnologías. Tengo más de cinco años de experiencia previa en administración de empresas, que se traducen en capacidad de liderazgo y trabajo en equipo.",
+                "summary-text": "Estoy empezando como desarrollador web especializado en Python. Tengo formación en Django, PostgreSQL y Bootstrap, pero soy flexible y ávido aprendiendo, y me adapto rápidamente a otras tecnologías. Tengo más de cinco años de experiencia previa en administración de empresas, que se traducen en capacidad de liderazgo y trabajo en equipo. Estoy muy motivado en este proceso de reconversión laboral y tengo las herramientas para cumplir en el rol.",
                 "skills-title": "Habilidades",
                 "experience-title": "Experiencia",
                 "exp1-title": "Empleo Independiente",
                 "exp1-date": "2021 - Presente",
-                "edu1-title": "Ingeniería Civil Electrónica - UTFSM",
-                "edu2-title": "Certificación FullStack en Python",
+                "exp1-desc1": "He hecho todo tipo de trabajos, desde asesorías, instalación de sistemas hasta repartos en este periodo.",
+                "exp1-desc2": "Durante esta transición decidí retomar estudios para volver a trabajar en áreas más relacionadas con mi formación profesional.",
+                "exp2-desc1": "Lidere un grupo de trabajo que diseñó la marca, planificó e inauguró restaurant en Valparaíso.",
+                "exp2-desc2": "Continué con las operaciones del día a día además de las labores administrativas de la empresa.",
+                "exp2-desc3": "Salí del puesto tras una reducción forzada por la fuerte baja de actividad debido a la pandemia.",
+                "exp3-title": "Internship - Anglo American S.A., Los Bronces mining complex",
+                "exp3-desc1": "Formé parte del equipo de mantención eléctrica e instrumentación de una de las plantas de la división.",
+                "exp3-desc2": "Tomé la iniciativa en proyecto de implementación del nuevo sistema de control de una máquina separadora de placas y diseñé el lazo de control y la interfaz de usuario para el PLC.",
+                "edu1-title": "Ingeniería Civil Electrónica - Universidad Técnica Federico Santa María",
+                "edu2-title": "Certificación Desarrollo Full Stack en Python - Desafío Latam",
                 "lang-btn": "English",
                 "print-btn": "Imprimir/Exportar",
                 "skills-agile": "Metodologías Agile (Scrum)",
